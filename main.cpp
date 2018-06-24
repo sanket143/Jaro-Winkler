@@ -75,9 +75,7 @@ float jaro_distance(string s1, string s2, bool caseSensitive = true){
       }
     }
   }
-  float dummy;
-  dummy = 5.0/3.0;
-  cout << dummy << endl;
+
   float weight = (m / s1.length() + m / s2.length() + (m - (numTrans / 2)) / m) / 3;
   float l = 0;
   float p = 0.1;
@@ -92,7 +90,7 @@ float jaro_distance(string s1, string s2, bool caseSensitive = true){
 }
 
 int main(){
-  float weight = jaro_distance("sanket", "sakeT");
+  float weight = jaro_distance("seveloper", "developer");
   cout << weight << endl; 
   return 0;  
 }
