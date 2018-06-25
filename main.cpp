@@ -3,7 +3,7 @@
 
 using namespace std;
 
-float jaro_distance(string s1, string s2, bool caseSensitive = true){
+float jw_distance(string s1, string s2, bool caseSensitive = true){
   float m = 0;
   int low, high, range;
   int k = 0, numTrans = 0;
@@ -90,7 +90,7 @@ float jaro_distance(string s1, string s2, bool caseSensitive = true){
 }
 
 int main(){
-  float weight = jaro_distance("seveloper", "developer");
+  float weight = jw_distance("seveloper", "developer");
   cout << weight << endl; 
   return 0;  
 }
