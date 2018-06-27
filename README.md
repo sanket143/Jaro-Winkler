@@ -22,3 +22,16 @@ INPUT:  developer, seveloper
 OUTPUT: 0.925926
 ```
 Both case have same number of different case but still got different Outputs because in the first case first four characters were similar gives more confidence on the similarity and so the score. \[ Thats Not An Error \]
+
+# Node.js Addon
+
+```
+$ cd addon
+$ sudo apt-get install node-gyp
+$ node-gyp configure build
+```
+
+*Inside main.js*
+```
+const addon = require("./build/Realease/algo");
+```
